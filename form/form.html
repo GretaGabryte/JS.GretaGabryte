@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <img class="logo" src="../img/OfferNet.png" />
+      </a>
+      <img id="meniu-btn" class="meniu-btn" src="../img/meniu-btn.svg" />
+      <nav>
+        <ul>
+          <li><a href="./form.html">Add</a></li>
+        </ul>
+        <ul>
+          <li><a href="../index.html">All products</a></li>
+        </ul>
+      </nav>
+    </header>
+    <nav id="mobile-nav" class="mobile-nav">
+      <ul>
+        <li><a href="./form.html">Add</a></li>
+      </ul>
+      <ul>
+        <li><a href="../index.html">All products</a></li>
+      </ul>
+    </nav>
+    <div class="form">
+      <input type="text" id="title" placeholder="Title" />
+      <input type="number" id="price" placeholder="Price" />
+      <input type="text" id="imgUrl" placeholder="Image URL" />
+      <input type="text" id="description" placeholder="Description" />
+      <input type="text" id="location" placeholder="Location" />
+      <button type="button" id="btn">Submit</button>
+    </div>
+    <div id="customAlertModal" class="modal">
+      <div class="modal-content">
+        <span id="customAlertClose" class="close">&times;</span>
+        <p id="customAlertMessage"></p>
+      </div>
+    </div>
+    <footer>
+      <hr class="shadow-hr" />
+      <div>OFFER NET</div>
+    </footer>
+    <script defer type="module" src="./form.js"></script>
+  </body>
+</html>
